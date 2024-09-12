@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import ReactAudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import DashboardComponent from "../DashboardComponent/page";
+import Image from "next/image";
 
 const audios = [
   {
@@ -563,7 +564,7 @@ const Page = () => {
   return (
     <>
       <DashboardComponent>
-        <div className="p-2">
+        <div className="py-2 pr-2 pl-0.5 shadow-md">
         <div className="md:flex justify-between items-center mb-3">
         <h2 className=" font-semibold text-xl"> In the rhythm of life, every beat is a story waiting to be heard. </h2>
         <input
@@ -577,9 +578,9 @@ const Page = () => {
             {filteredAudios.map((audio) => (
               <div
                 key={audio.id}
-                className="max-w-sm flex justify-center flex-col rounded-md items-center overflow-hidden shadow-md shadow-teal-300"
+                className="max-w-sm flex justify-center flex-col rounded-md items-center overflow-hidden shadow-md border"
               >
-                <img
+                <Image
                   className="justify-center flex items-center w-1/2 h-full"
                   src="/images/logo-audio.png"
                   alt="Audio Logo"

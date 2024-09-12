@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 
 const DashboardComponent = ({children}) => {
@@ -132,7 +133,7 @@ const DashboardComponent = ({children}) => {
         </div>
 
         <div class="flex flex-col flex-1 overflow-y-auto">
-          <div class='flex items-center justify-between sticky top-0 z-50 bg-[#e0e0e0] text-black'>
+          <div class='flex items-center justify-between sticky top-0 z-50 shadow-sm bg-[#e0e0e0] text-black'>
             <div class="flex relative items-center py-1 px-4">
               <button
                 className=" focus:outline-none hover:ring-2 ring-black hover:ring-gray-200 rounded-md"
@@ -193,7 +194,7 @@ const DashboardComponent = ({children}) => {
 
               {/* Sun icon */}
               <svg
-                className="swap-off fill-current w-10 h-10"
+                className="swap-off fill-current w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -202,7 +203,7 @@ const DashboardComponent = ({children}) => {
 
               {/* Moon icon */}
               <svg
-                className="swap-on fill-current w-10 h-10"
+                className="swap-on fill-current w-8 h-8"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -217,8 +218,8 @@ const DashboardComponent = ({children}) => {
                 className="btn btn-ghost relative btn-circle avatar"
                 onClick={ToggleDropdown}
               >
-                <div className="w-12 rounded-full pr-2">
-                  <img
+                <div className="w-10 rounded-full pr-2">
+                  <Image
                     className=" rounded-full ring-2 hover:ring-white"
                     alt="User Avatar"
                     src="/images/Danesh.jpg"

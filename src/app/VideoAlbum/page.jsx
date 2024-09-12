@@ -12,6 +12,7 @@ import "./VideoAlbum.css";
 // import required modules
 import { Autoplay, EffectCoverflow } from "swiper/modules";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Page() {
   const slides = [
@@ -98,7 +99,7 @@ export default function Page() {
                   opacity: slide?.id === slideIndex?.id ? 1 : 0.45,
                 }}
               >
-                <img
+                <Image
                   className="justify-center flex items-center w-full h-full"
                   src={slide.src}
                   alt={slide.alt}

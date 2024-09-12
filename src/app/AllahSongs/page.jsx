@@ -4,6 +4,7 @@ import DashboardComponent from "../DashboardComponent/page";
 import H5AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
 import { FaPlay, FaPause } from "react-icons/fa6";
+import Image from "next/image";
 
 const audios = [
   {
@@ -120,7 +121,7 @@ const Page = () => {
           <h2 className=" font-semibold">12 Songs</h2>
         </div>
         <div>
-          <img
+          <Image
             className=" rounded-md w-full sm:h-full md:h-[400px]"
             src="/images/allahimg.png"
             alt=""
@@ -135,7 +136,7 @@ const Page = () => {
             >
               <div className="flex gap-5 items-center">
                 <p>{audio.id}st</p>
-                <img
+                <Image
                   src={audio.img}
                   alt={audio.title}
                   className="w-12 h-12 object-cover"

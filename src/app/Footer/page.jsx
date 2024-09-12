@@ -9,7 +9,7 @@ const Page = () => {
     <div className="pb-3 flex justify-center md:px-20 items-center flex-col bg-gradient-to-r from-[#be0002] via-[#ff6600] to-[#ffcc00] text-white">
       <div className="container border-b-2 border-blue-200 shadow-sm flex justify-start flex-col">
         <div className="flex flex-col items-center space-x-10 md:flex-row pt-5 md:pt-24">
-          <img src="/images/FooterLogo.png" alt="Footer Logo" />
+          <Image src="/images/FooterLogo.png" alt="Footer Logo" />
           <h1 className="pt-6 md:pt-0 uppercase text-2xl md:text-6xl font-extrabold text-center md:text-left">
             Mobitising
           </h1>
@@ -70,15 +70,15 @@ const Page = () => {
           <div className="flex flex-col gap-3 pl-3 md:pl-0">
             <h1 className="font-bold text-2xl">Contact Us</h1>
             <p className="flex items-center text-lg">
-              <img src="/images/Emaillogo.png" alt="Email Logo" className="mr-4 h-4 w-18" />
+              <Image src="/images/Emaillogo.png" alt="Email Logo" className="mr-4 h-4 w-18" />
               info@Mobitisinginc.com
             </p>
             <p className="flex items-center text-lg">
-              <img src="/images/CallLogo.png" alt="Call Logo" className="mr-4 h-4 w-18" />
+              <Image src="/images/CallLogo.png" alt="Call Logo" className="mr-4 h-4 w-18" />
               +92-2134322370
             </p>
             <p className="flex items-center text-lg">
-              <img src="/images/LocationLogo.png" alt="Location Logo" className=" mr-4 h-4 w-18" />
+              <Image src="/images/LocationLogo.png" alt="Location Logo" className=" mr-4 h-4 w-18" />
               Karachi, Pakistan
             </p>
           </div>

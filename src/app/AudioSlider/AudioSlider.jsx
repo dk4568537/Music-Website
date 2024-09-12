@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import SlickCarousel from "../component/carosel";
+import Image from "next/image";
 
 const AudioSlider = () => {
   const audioItems = [
@@ -81,7 +82,7 @@ const AudioSlider = () => {
           {audioItems.map((item, index) => (
             <Link href={item.href} key={index}>
               <div className="max-w-sm flex justify-center flex-col items-center overflow-hidden">
-                <img
+                <Image
                   className="justify-center flex items-center shadow-teal-300 rounded-xl shadow-md w-full h-full"
                   src={item.src}
                   alt={item.alt}

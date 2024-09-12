@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { FaGoogle, FaFacebookF } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io5";
 import DashboardComponent from "../DashboardComponent/page";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -10,7 +11,7 @@ const page = () => {
       <DashboardComponent>
         <div className="flex justify-center items-centerbg-gray-100">
           <div className="w-full max-w-md gap-x-3 px-2 items-center justify-center flex flex-col">
-            <img
+            <Image
               className="text-2xl w-16 h-16 rounded-full hover:ring-2 hover:ring-black mb-4 mt-2 text-center"
               src="/images/Danesh.jpg"
               alt="Profile"
